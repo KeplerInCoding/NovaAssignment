@@ -7,7 +7,7 @@ import bg1 from '../images/bg1.png';
 const ContactUs = () => {
   return (
     <div className="h-screen flex flex-col justify-between" style={{ backgroundImage: `url(${bg1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="flex-grow m-8  relative">
+      <div className="flex-grow m-12 mx-6 relative">
         <div className="absolute rounded-3xl inset-0" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', zIndex: 10 }}>
           {/* Your content goes here */}
         </div>
