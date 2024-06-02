@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = ({ prevPage, prevRoute, nextPage, nextRoute }) => {
   return (
-    <footer className="p-2">
+    <footer className="p-2 fixed bottom-0 w-full bg-yellow-100">
       <div className="flex">
         <div className='flex-grow'>
           {prevRoute && (
