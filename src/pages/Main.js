@@ -1,8 +1,12 @@
+// Main.js
 import React from 'react'
+import Footer from '../components/Footer'
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <div>
+        <Footer nextPage={"Who We Are"} nextRoute={"/who-we-are"}/>
+    </div>
   )
 }
 

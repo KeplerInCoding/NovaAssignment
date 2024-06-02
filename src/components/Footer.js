@@ -1,9 +1,30 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = ({ prevPage, prevRoute, nextPage, nextRoute }) => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="p-2">
+      <div className="flex">
+        <div className='flex-grow'>
+          {prevRoute && (
+            <Link to={prevRoute} className="flex items-center">
+              <span className="mr-2">&larr;</span>
+              <span>{prevPage}</span>
+            </Link>
+          )}
+        </div>
 
-export default Footer
+        <div className='flex-grow flex justify-end'>
+          {nextRoute && (
+            <Link to={nextRoute} className="flex items-center">
+              <span>{nextPage}</span>
+              <span className="ml-2">&rarr;</span>
+            </Link>
+          )}
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

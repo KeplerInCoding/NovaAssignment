@@ -5,19 +5,13 @@ import WhoWeAre from "./pages/WhoWeAre";
 import WhatWeDo from "./pages/WhatWeDo";
 import OurTeam from "./pages/OurTeam";
 import ContactUs from "./pages/ContactUs";
-import { Link } from "react-router-dom";
+import Header from "./components/Header";
 
 
 function App() {
   return (
     <div>
-      <div className="flex flex-col text-red-900">
-        <Link to="/">Main</Link>
-        <Link to="/who-we-are">Who We Are</Link>
-        <Link to="/what-we-do">What We Do</Link>
-        <Link to="/our-team">Our Team</Link>
-        <Link to="/contact-us">Contact Us</Link>
-      </div>
+      <Header/>
 
 
       <Routes>
