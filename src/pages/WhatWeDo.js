@@ -23,7 +23,7 @@ const images = [
 const WhatWeDo = () => {
   return (
     <div className="h-screen" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className='h-screen flex flex-col justify-center items-center'>
+      <div className='h-screen flex flex-col justify-center items-center gap-10'>
 
         <div className='sm:text-6xl md:text-7xl flex flex-col justify-center text-5xl'>WHAT WE DO</div>
 
