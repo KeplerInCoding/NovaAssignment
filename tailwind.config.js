@@ -6,6 +6,7 @@ module.exports = {
       rotate: {
         '20': '20deg',
         '-20': '-20deg',
+        
       },
     },
   },
